@@ -4,7 +4,6 @@ var fs = require("fs")
 var path = require("path")
 var jade = require("jade")
 var express = require("express")
-var marked = require('marked')
 
 module.exports = function(pathToWorkingDir){
 	var app = express()
@@ -15,7 +14,7 @@ module.exports = function(pathToWorkingDir){
 	// this function provides the HTML code, which one will be displayed to the page
 	app.html = function() {
 		var layoutPath = path.resolve(app.locals.path, app.locals.config.layout)
-		return jade.compileFile(layoutPath)
+		return jade.compileFile(layoutPath)(app.locals)
 	}
 
 	// here we can return LESS css, which will only effect the page HTML code
