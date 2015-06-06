@@ -1,0 +1,10 @@
+{
+	"name": "LarveSpeer-jade",
+	"version": "0.0.0",
+	"description": "",
+	"private": true,
+	"dependencies": {
+		"express": "x",
+		"jade": "x"
+	}
+}
