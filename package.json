@@ -1,7 +1,7 @@
 {
   "name": "LarveSpeer-jade",
-  "version": "0.0.0",
-  "description": "## Description Write jade and less.",
+  "version": "0.0.1",
+  "description": "Description Write jade and less.",
   "private": true,
   "dependencies": {
     "express": "x",
